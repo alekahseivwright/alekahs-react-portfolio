@@ -127,7 +127,32 @@ button:hover {
   margin-bottom: 10px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
 
+input, textarea {
+  padding: 12px;
+  border: 2px solid #f8a5c2;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #a29bfe;
+  box-shadow: 0 0 5px #f8a5c2;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
 
 .footer {
   text-align: center;
