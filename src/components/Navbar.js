@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assests/alekah-react-logo.png";
+import logo from "../assets/alekah-react-logo.png";
 
 function Navbar() {
     return (

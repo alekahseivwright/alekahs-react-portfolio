@@ -36,9 +36,6 @@ function Projects() {
           <strong>Restaurant Website:</strong> Created solo using basic HTML & CSS, implementing 
           photos, contact page, reviews, etc.
         </p>
-        <a href={restaurantImg} download="ResturantWebsite.png">
-          Download Project Document
-        </a>
       </div>
     </div>
   );

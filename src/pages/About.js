@@ -1,4 +1,4 @@
-import MeImg from "../assests/me.png";
+import MeImg from "../assets/me.png";
 import ResumePdf from "../assets/Alekah_Seivwright_Resume.pdf";
 
 function About() {
