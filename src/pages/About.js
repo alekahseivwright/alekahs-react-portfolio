@@ -1,5 +1,4 @@
 import MeImg from "../assets/me.png";
-import ResumePdf from "../assets/Alekah_Seivwright_Resume.pdf";
 
 function About() {
     return ( 
@@ -13,8 +12,14 @@ function About() {
                I’m passionate about learning, creating, and growing as a student to achieve my goals in the tech world.
                On my personal time, I enjoy weightlifting, gaming, and camping.
               </p>
-              <a href= {ResumePdf} download className="btn">Download My Resume PDF
-              </a>
+            <a 
+                href="/Alekah_Seivwright_Resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="btn">
+                Download My Resume
+            </a>
+
         </div>
      );
 }

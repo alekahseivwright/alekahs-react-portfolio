@@ -11,6 +11,10 @@
 # production
 /build
 
+# Ignore all PDFs except the final resume
+*.pdf
+!public/Alekah_Seivwright_Resume.pdf
+
 # misc
 .DS_Store
 .env.local
