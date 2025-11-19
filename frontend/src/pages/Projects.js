@@ -1,9 +1,56 @@
+import { useEffect, useState } from "react";
+
 import calculatorImg from "../assets/CalculatorApplication.png";
 import srsCityDoc from "../assets/SRS-CityRegistrationApp.docx";
 import restaurantImg from "../assets/ResturantWebsite.png";
 import srsCityImg from "../assets/SRS-Project.png";
 
 function Projects() {
+
+  //assignment 2/3 additions
+  
+  const [projects, setProjects] = useState([]);
+  const token = localStorage.getItem('token');
+
+  const fetchProjects = async () => {
+    try {
+      const res = await fetch('http://localhost:5000/api/projects');
+      const data = await res.json();
+      setProjects(data);
+    } catch (error) {
+      console.error('Error fetching projects:', error);
+    }
+
+  };
+
+  //delete project 
+
+  const deleteProject = async (id) => {
+    try {
+      await fetch(`http://localhost:5000/api/projects/${id}`, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+        },
+      });
+
+
+      fetchProjects();
+
+    } catch (error) {
+      console.error('Error deleting project:', error);
+
+    }
+
+  };
+
+  // fetch projects on page load
+
+  useEffect(() => {
+    fetchProjects();
+  }, []);
+
+
   return (
     <div className="projects">
       <h1>Projects</h1>
@@ -39,6 +86,7 @@ function Projects() {
       </div>
     </div>
   );
+
 }
 
 export default Projects;

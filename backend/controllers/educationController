@@ -1,0 +1,41 @@
+const Education = require('../models/educationModels');
+
+// CRUD Operations
+exports.getAll = async (req, res) => {
+  try { const list = await Education.find().sort({ createdAt: -1 }); 
+  res.json(list); 
+}
+  catch (err) { res.status(500).json({ message: 'Server error' }); }
+};
+
+exports.create = async (req, res) => {
+  try { const doc = await Education.create(req.body); 
+    res.status(201).json(doc); 
+}
+  catch (err) { res.status(400).json({ message: 'Invalid data' }); }
+};
+
+exports.getOne = async (req, res) => {
+  try { const d = await Education.findById(req.params.id); 
+    if(!d) return res.status(404).json({message:'Not found'}); 
+    res.json(d); 
+}
+  catch (err) { res.status(500).json({ message: 'Server error' }); }
+};
+
+exports.update = async (req, res) => {
+  try { const u = await Education.findByIdAndUpdate(req.params.id, req.body, { new: true }); 
+  if(!u) return res.status(404).json({message:'Not found'}); 
+  res.json(u); 
+}
+  catch (err) { res.status(400).json({ message: 'Invalid data' }); }
+};
+
+exports.delete = async (req, res) => {
+  try { 
+    const d = await Education.findByIdAndDelete(req.params.id); 
+    if(!d) return res.status(404).json({message:'Not found'}); 
+    res.json({ message: 'Deleted' });
+}
+    catch (err) { res.status(500).json({ message: 'Server error' }); }
+};

@@ -52,7 +52,12 @@ exports.login = async (req, res) => {
 
         //create token
         const token = jwt.sign(
-            { userId: user._id, username: user.username },
+            { 
+                userId: user._id, 
+                email: user.email,
+                role: user.role
+             },
+
             process.env.JWT_SECRET,
             { expiresIn: '1d' }
         );
@@ -63,5 +68,11 @@ exports.login = async (req, res) => {
              } catch (error) {
         res.status(500).json({ message: 'Login error' });
     }       
+};
+
+//logout user
+exports.logout = (req, res) => {
+    // Invalidate token on client side
+    res.status(200).json({ message: 'Logout successful' });
 };
 

@@ -4,11 +4,21 @@ const controller = require("../controllers/projectController");
 const auth = require("../middleware/authMiddleware");
 
 // CRUD ROUTES
-router.get("/", controller.getProjects);      // Get all projects
-router.get("/:id", controller.getProject);    // Get one project by ID
-router.post("/", auth, controller.createProject);   // Create new project
-router.put("/:id", auth, controller.updateProject); // Update a project
-router.delete("/:id", auth, controller.deleteProject); // Delete a project
+
+// Get all projects
+router.get("/", controller.getProjects);
+
+// Get one project by ID
+router.get("/:id", controller.getProject);    
+
+// Create new project
+router.post("/", auth, controller.createProject); 
+
+// Update a project
+router.put("/:id", auth, controller.updateProject); 
+
+// Delete a project
+router.delete("/:id", auth, controller.deleteProject); 
 
 module.exports = router;
 

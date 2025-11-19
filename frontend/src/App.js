@@ -9,6 +9,8 @@ import Education from "./pages/Education";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 
+import Login from "./pages/Login";
+
 function App() {
   return (
     <div className="app">
@@ -21,6 +23,7 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path = "/login" element = {<Login />} />
         </Routes>
       </main>
       <Footer />

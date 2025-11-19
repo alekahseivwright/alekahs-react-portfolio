@@ -1,0 +1,24 @@
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/educationController');
+const auth = require('../middleware/authMiddleware');
+const role = require('../middleware/roleMiddleware');
+
+// EDUCATION ROUTES
+
+// Get all education entries
+router.get('/', controller.getAll);
+
+// Get one education entry by ID
+router.get('/:id', controller.getOne);
+
+// Create new education entry (protected route)
+router.post('/', auth, role(['admin']), controller.create);
+
+// Update an education entry (protected route)
+router.put('/:id', auth, role(['admin']), controller.update);
+
+// Delete an education entry (protected route)
+router.delete('/:id', auth, role(['admin']), controller.delete);
+
+module.exports = router;
