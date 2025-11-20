@@ -9,7 +9,7 @@ import Education from "./pages/Education";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 
-import Login from "./pages/Login";
+import Signin from "./pages/Signin";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path = "/login" element = {<Login />} />
+          <Route path = "/signin" element = {<Signin />} />
         </Routes>
       </main>
       <Footer />

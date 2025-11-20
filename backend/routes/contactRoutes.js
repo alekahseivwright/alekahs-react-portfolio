@@ -6,10 +6,10 @@ const auth = require('../middleware/authMiddleware');
 // CONTACT ROUTES
 
 // Create new contact message
-router.post('/', controller.createMessage); 
+router.post('/', auth, controller.createMessage); 
 
 // Get all contact messages (protected route)
-router.get('/', auth, controller.getMessages);
+router.get('/', controller.getMessages);
 
 // Update a contact message (protected route)
 router.put('/:id', auth, controller.updateMessage);
