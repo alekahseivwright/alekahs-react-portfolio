@@ -1,7 +1,7 @@
 function Footer() {
     return ( 
-        <footer>
-            <p>&copy; 2025 Alekah's Portfolio. All rights reserved.</p>
+        <footer className="footer">
+            <p>&copy; 2026 Alekah's Portfolio. All rights reserved. Made with 💕 and cats 🐱</p>
         </footer>
      );
 }
