@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import { API_BASE_URL } from '../config/api';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -11,9 +12,10 @@ function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setError('');
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
@@ -26,23 +28,22 @@ function Login() {
         return;
       }
 
-      // Store token and user in context
       setToken(data.token);
       setUser(data.user);
 
       localStorage.setItem('token', data.token);
       localStorage.setItem('user', JSON.stringify(data.user));
 
-      // Navigate to projects page
-      navigate('/projects');
+      navigate('/contact');
     } catch (err) {
-      setError('An error occurred. Please try again.');
+      setError('Could not connect to server. Make sure the backend is running.');
     }
   };
 
   return (
     <div className="login-page">
-      <h1>Login</h1>
+      <h1>Admin Login</h1>
+      <p className="login-note">Sign in to view contact form submissions.</p>
       <form onSubmit={handleLogin}>
         <input
           placeholder="Username"

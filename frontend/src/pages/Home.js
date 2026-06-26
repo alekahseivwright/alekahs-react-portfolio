@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="home">
       <h1>Welcome to Alekah's Portfolio</h1>
-      <p className="subtitle">Software Engineering Student · Aspiring Project Manager · Cat Lover 🐱</p>
+      <p className="subtitle">Software Engineering Student · Aspiring Frontend Developer · Cat Lover 🐱</p>
       <p>
         I'm passionate about building web applications that are clean, efficient, and
         user-friendly. My goal is to bring ideas to life by transforming concepts into

@@ -1,9 +1,11 @@
 import MeImg from "../assets/me.png";
+import kittiesCuddling from "../assets/kitties-cuddling.png";
 
 function About() {
   return (
     <div className="about">
       <h1>About Me</h1>
+      <img src={kittiesCuddling} alt="" className="about-kitty" />
       <img src={MeImg} alt="Alekah Seivwright" className="about-img" />
       <p className="about-intro">
         Hi, I'm <strong>Alekah Seivwright</strong> — a Software Engineering Technician

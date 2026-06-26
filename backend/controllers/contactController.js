@@ -1,4 +1,5 @@
 const Contact = require("../models/contactModels");
+const { sendContactNotification } = require("../utils/sendEmail");
 
 // CREATE new message
 exports.createMessage = async (req, res) => {
@@ -16,10 +17,24 @@ exports.createMessage = async (req, res) => {
         });
 
         await newMessage.save();
-        res.status(201).json({ message: "Message sent successfully!", newMessage });
+
+        let emailSent = false;
+        try {
+            emailSent = await sendContactNotification({ name, email, message });
+        } catch (emailError) {
+            console.error('Failed to send contact notification email:', emailError.message);
+        }
+
+        res.status(201).json({
+            message: emailSent
+                ? "Message sent successfully! I'll get back to you soon."
+                : "Message saved successfully! I'll get back to you soon.",
+            newMessage,
+            emailSent,
+        });
 
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ message: error.message || "Server error" });
     }
 };
 

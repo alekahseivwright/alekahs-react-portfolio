@@ -1,20 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/contactController');
-const auth = require('../middleware/authMiddleware');
+const { verifyToken, requireAdmin } = require('../middleware/authMiddleware');
 
-// CONTACT ROUTES
+// Public route - anyone can submit contact form
+router.post('/', controller.createMessage);
 
-// Create new contact message
-router.post('/', auth, controller.createMessage); 
-
-// Get all contact messages (protected route)
-router.get('/', controller.getMessages);
-
-// Update a contact message (protected route)
-router.put('/:id', auth, controller.updateMessage);
-
-// Delete a contact message (protected route)
-router.delete('/:id', auth, controller.deleteMessage);
+// Admin-only routes
+router.get('/', verifyToken, requireAdmin, controller.getMessages);
+router.put('/:id', verifyToken, requireAdmin, controller.updateMessage);
+router.delete('/:id', verifyToken, requireAdmin, controller.deleteMessage);
 
 module.exports = router;

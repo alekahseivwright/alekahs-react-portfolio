@@ -6,7 +6,7 @@ const connectDB = require("./config/db");
 const projectRoutes = require("./routes/projectRoutes");
 const authRoutes = require("./routes/authRoutes");
 const contactRoutes = require("./routes/contactRoutes");
-const educationRoutes = require("./routes/educationRoutes");
+const educationRoutes = require("./routes/educationRoutes"); 
 
 // Initialize app
 const app = express();

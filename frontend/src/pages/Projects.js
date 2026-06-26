@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { API_BASE_URL } from "../config/api";
 
 import calculatorImg from "../assets/CalculatorApplication.png";
 import srsCityDoc from "../assets/SRS-CityRegistrationApp.docx";
@@ -50,7 +51,7 @@ function Projects() {
 
   const fetchProjects = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/projects");
+      const res = await fetch(`${API_BASE_URL}/api/projects`);
       const data = await res.json();
       setApiProjects(data);
     } catch (error) {
@@ -60,7 +61,7 @@ function Projects() {
 
   const deleteProject = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/projects/${id}`, {
+      await fetch(`${API_BASE_URL}/api/projects/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
