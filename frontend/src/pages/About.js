@@ -8,7 +8,7 @@ function About() {
       <img src={kittiesCuddling} alt="" className="about-kitty" />
       <img src={MeImg} alt="Alekah Seivwright" className="about-img" />
       <p className="about-intro">
-        Hi, I'm <strong>Alekah Seivwright</strong> — a Software Engineering Technician
+        Hi, I'm <strong>Alekah Seivwright</strong>, a Software Engineering Technician
         student at Centennial College with a love for cats, code, and creative problem-solving.
         I'm working toward a career as a project manager on an app or game development team,
         where I can combine my organizational skills with my passion for technology.
@@ -17,7 +17,7 @@ function About() {
       <div className="about-section">
         <h2>What I'm Working On</h2>
         <p>
-          Right now I'm deepening my skills in full-stack web development — React on the
+          Right now I'm deepening my skills in full-stack web development, with React on the
           frontend, Node.js and MongoDB on the backend. I'm also learning how to lead
           projects effectively, from splitting up team tasks to polishing final deliverables
           like SRS documents and portfolio sites.
@@ -55,7 +55,7 @@ function About() {
         <h2>Fun Facts</h2>
         <ul className="fun-facts">
           <li>🐾 I genuinely believe every good portfolio needs at least one cat reference.</li>
-          <li>📋 I was Team Lead on a City Registration SRS project — loved organizing the team!</li>
+          <li>📋 I was Team Lead on a City Registration SRS project, and I loved organizing the team!</li>
           <li>🎯 My dream role blends leadership, creativity, and building things people actually use.</li>
           <li>☕ Best coding sessions happen with a warm drink and a cozy background.</li>
         </ul>

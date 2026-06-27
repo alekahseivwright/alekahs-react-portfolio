@@ -161,7 +161,7 @@ export default function Contact() {
           <h2>Contact Submissions</h2>
           {messagesError && <p className="status">{messagesError}</p>}
           {messages.length === 0 && !messagesError && (
-            <p>No messages yet — when someone contacts you, they'll show up here.</p>
+            <p>No messages yet. When someone contacts you, they'll show up here.</p>
           )}
           {messages.map((msg) => (
             <div className="message-card" key={msg._id}>

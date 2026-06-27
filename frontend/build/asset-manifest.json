@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.6078eba9.css",
-    "main.js": "/static/js/main.4968cd61.js",
+    "main.css": "/static/css/main.0d4e9cc9.css",
+    "main.js": "/static/js/main.9ac97b81.js",
     "static/js/453.543c0eed.chunk.js": "/static/js/453.543c0eed.chunk.js",
     "static/media/SRS-CityRegistrationApp.docx": "/static/media/SRS-CityRegistrationApp.ed2fac72db29193566ab.docx",
     "static/media/ResturantWebsite.png": "/static/media/ResturantWebsite.384da2ce003ad40246f9.png",
     "static/media/me.png": "/static/media/me.a4a037b053b33b92e912.png",
-    "static/media/kitties-cuddling.png": "/static/media/kitties-cuddling.5af66b81f81e917db627.png",
+    "static/media/kitties-cuddling.png": "/static/media/kitties-cuddling.9d023d8d54364cc56da5.png",
     "static/media/SRS-Project.png": "/static/media/SRS-Project.c50560b325a87968e4e6.png",
     "static/media/CalculatorApplication.png": "/static/media/CalculatorApplication.b78aaa7378453eb9f0d2.png",
-    "static/media/kitties-row.png": "/static/media/kitties-row.992025f333fd626bbc41.png",
+    "static/media/kitty-waving.png": "/static/media/kitty-waving.34cb43083c99441dcc58.png",
+    "static/media/kitties-row.png": "/static/media/kitties-row.26daa7743988d8c78f72.png",
+    "static/media/happykitty.png": "/static/media/happykitty.c0bc3567d17904fced3e.png",
     "static/media/alekah-react-logo.png": "/static/media/alekah-react-logo.a40dddbed7eec00b1fbe.png",
-    "static/media/kitty-waving.png": "/static/media/kitty-waving.4c0c77a75c1110e03ded.png",
     "index.html": "/index.html",
-    "main.6078eba9.css.map": "/static/css/main.6078eba9.css.map",
-    "main.4968cd61.js.map": "/static/js/main.4968cd61.js.map",
+    "main.0d4e9cc9.css.map": "/static/css/main.0d4e9cc9.css.map",
+    "main.9ac97b81.js.map": "/static/js/main.9ac97b81.js.map",
     "453.543c0eed.chunk.js.map": "/static/js/453.543c0eed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6078eba9.css",
-    "static/js/main.4968cd61.js"
+    "static/css/main.0d4e9cc9.css",
+    "static/js/main.9ac97b81.js"
   ]
 }
