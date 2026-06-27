@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import kittiesRow from "../assets/kitties-row.png";
-import happyKitty from "../assets/happykitty.png";
+import helloKitty from "../assets/portfolio_kitty.gif";
+import laptopKitty from "../assets/portfolio kitty.gif";
+import spinningKitty from "../assets/spinningkitty.gif";
 
 function Home() {
   return (
@@ -18,21 +19,19 @@ function Home() {
         or coding a React app from scratch.
       </p>
 
-      <div className="home-actions">
-        <Link to="/about" className="featured-card featured-card-sm">
-          <img src={happyKitty} alt="" className="about-cta-kitty" />
+      <div className="home-cards">
+        <Link to="/about" className="featured-card">
+          <img src={helloKitty} alt="" className="featured-gif" />
           <span>Get to Know Me</span>
         </Link>
-      </div>
 
-      <div className="home-featured">
         <Link to="/projects" className="featured-card">
-          <span className="emoji">💻</span>
+          <img src={laptopKitty} alt="" className="featured-gif" />
           <span>Explore My Projects</span>
         </Link>
 
         <Link to="/contact" className="featured-card">
-          <img src={kittiesRow} alt="" className="featured-kitty" />
+          <img src={spinningKitty} alt="" className="featured-gif" />
           <span>Get In Touch</span>
         </Link>
       </div>
