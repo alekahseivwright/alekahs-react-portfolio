@@ -284,6 +284,19 @@ h2, h3 {
   object-fit: contain;
 }
 
+.featured-gif-slot {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.home-cards .featured-gif-lg {
+  transform: scale(1.45);
+}
+
 .home-cards .featured-card span {
   font-size: 0.9rem;
   text-align: center;

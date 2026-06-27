@@ -31,7 +31,9 @@ function Home() {
         </Link>
 
         <Link to="/contact" className="featured-card">
-          <img src={spinningKitty} alt="" className="featured-gif" />
+          <span className="featured-gif-slot">
+            <img src={spinningKitty} alt="" className="featured-gif featured-gif-lg" />
+          </span>
           <span>Get In Touch</span>
         </Link>
       </div>

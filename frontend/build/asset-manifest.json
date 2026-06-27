@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2e5b1ff.css",
-    "main.js": "/static/js/main.9ec4d100.js",
+    "main.css": "/static/css/main.cec93759.css",
+    "main.js": "/static/js/main.88c232f7.js",
     "static/js/453.543c0eed.chunk.js": "/static/js/453.543c0eed.chunk.js",
     "static/media/SRS-CityRegistrationApp.docx": "/static/media/SRS-CityRegistrationApp.ed2fac72db29193566ab.docx",
     "static/media/ResturantWebsite.png": "/static/media/ResturantWebsite.384da2ce003ad40246f9.png",
@@ -16,12 +16,12 @@
     "static/media/portfolio_kitty.gif": "/static/media/portfolio_kitty.a497575a04588450fed6.gif",
     "static/media/alekah-react-logo.png": "/static/media/alekah-react-logo.a40dddbed7eec00b1fbe.png",
     "index.html": "/index.html",
-    "main.d2e5b1ff.css.map": "/static/css/main.d2e5b1ff.css.map",
-    "main.9ec4d100.js.map": "/static/js/main.9ec4d100.js.map",
+    "main.cec93759.css.map": "/static/css/main.cec93759.css.map",
+    "main.88c232f7.js.map": "/static/js/main.88c232f7.js.map",
     "453.543c0eed.chunk.js.map": "/static/js/453.543c0eed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2e5b1ff.css",
-    "static/js/main.9ec4d100.js"
+    "static/css/main.cec93759.css",
+    "static/js/main.88c232f7.js"
   ]
 }
