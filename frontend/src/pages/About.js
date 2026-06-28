@@ -8,19 +8,18 @@ function About() {
       <h1>About Me</h1>
       <img src={MeImg} alt="Alekah Seivwright" className="about-img" />
       <p className="about-intro">
-        Hi, I'm <strong>Alekah Seivwright</strong>, a Software Engineering Technician
-        student at Centennial College with a love for cats, code, and creative problem-solving.
-        I'm working toward a career as a project manager on an app or game development team,
-        where I can combine my organizational skills with my passion for technology.
+        Hi, I'm <strong>Alekah Seivwright</strong>, an aspiring Junior Software Engineer 
+        with a love for cats, code, and creative problem-solving. I enjoy building intuitive, 
+        user-friendly applications and turning ideas into real, functional solutions. As I grow in my career, 
+        I hope to combine my technical background with my leadership skills in a future role within software or game development.
       </p>
 
       <div className="about-section">
         <h2>What I'm Working On</h2>
         <p>
-          Right now I'm deepening my skills in full-stack web development, with React on the
-          frontend, Node.js and MongoDB on the backend. I'm also learning how to lead
-          projects effectively, from splitting up team tasks to polishing final deliverables
-          like SRS documents and portfolio sites.
+        I'm currently expanding my experience in full-stack web development with React, Node.js, and MongoDB 
+        through personal projects that challenge me to learn something new. My favourite part of development 
+        is bringing ideas to life by creating applications that are intuitive, visually appealing, and enjoyable to use.
         </p>
       </div>
 
@@ -35,7 +34,7 @@ function About() {
             <span className="skill-tag">Express</span>
             <span className="skill-tag">MongoDB</span>
             <span className="skill-tag">XAML</span>
-            <span className="skill-tag">Git & GitHub</span>
+            <span className="skill-tag">GitHub</span>
             <span className="skill-tag">Technical Writing</span>
             <span className="skill-tag">Project Management</span>
           </div>

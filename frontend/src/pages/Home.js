@@ -15,8 +15,7 @@ function Home() {
       <p>
         I'm passionate about building web applications that are clean, efficient, and
         user-friendly. My goal is to bring ideas to life by transforming concepts into
-        seamless digital experiences, whether that's leading a team through an SRS document
-        or coding a React app from scratch.
+        seamless digital experiences.
       </p>
 
       <div className="home-cards">
