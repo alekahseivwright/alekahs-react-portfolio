@@ -50,7 +50,7 @@ function About() {
             <li>🏋️ Weightlifting</li>
             <li>🎮 Gaming</li>
             <li>🏕️ Camping</li>
-            <li>🐱 Hanging out with cats</li>
+            <li>🐱 Hanging out with Ripley</li>
             <li>👨‍👩‍👧‍👦 Spending time with family</li>
           </ul>
         </div>
