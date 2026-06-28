@@ -1,9 +1,9 @@
-import kittyWaving from "../assets/kitty-waving.png";
+import cloudGazingKitty from "../assets/gifs/cloudgazing_kitty.gif";
 
 function Footer() {
     return (
         <footer className="footer">
-            <img src={kittyWaving} alt="" className="footer-kitty" />
+            <img src={cloudGazingKitty} alt="" className="footer-kitty" />
             <p>&copy; 2026 Alekah's Portfolio. All rights reserved. Made with 💕 and cats 🐱</p>
         </footer>
     );

@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import logo from "../assets/alekah-react-logo.png";
+import logo from "../assets/pictures/alekah-react-logo.png";
 
 function Navbar() {
     const { user, signout } = useContext(AuthContext);

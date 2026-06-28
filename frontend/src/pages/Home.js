@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import helloKitty from "../assets/portfolio_kitty.gif";
-import laptopKitty from "../assets/portfolio kitty.gif";
-import spinningKitty from "../assets/spinningkitty.gif";
+import helloKitty from "../assets/gifs/portfolio_kitty.gif";
+import laptopKitty from "../assets/gifs/portfolio kitty.gif";
+import peaceKitty from "../assets/gifs/peacekitty.gif";
 
 function Home() {
   return (
@@ -31,9 +31,7 @@ function Home() {
         </Link>
 
         <Link to="/contact" className="featured-card">
-          <span className="featured-gif-slot">
-            <img src={spinningKitty} alt="" className="featured-gif featured-gif-lg" />
-          </span>
+          <img src={peaceKitty} alt="" className="featured-gif" />
           <span>Get In Touch</span>
         </Link>
       </div>

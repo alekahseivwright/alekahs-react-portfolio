@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useContext, useCallback } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { API_BASE_URL } from "../config/api";
-import kittyWaving from "../assets/kitty-waving.png";
-import kittiesCuddling from "../assets/kitties-cuddling.png";
+import leavesBunny from "../assets/gifs/leaves_bunny.gif";
 
 const CONTACT_EMAIL = "seivwrightalekah@gmail.com";
 
@@ -105,9 +104,8 @@ export default function Contact() {
 
   return (
     <div className="contact">
+      <img src={leavesBunny} alt="" className="contact-heading-gif" />
       <h1>Contact Me</h1>
-      <img src={kittyWaving} alt="" className="contact-kitty contact-kitty-left" />
-      <img src={kittiesCuddling} alt="" className="contact-kitty contact-kitty-right" />
 
       <p className="contact-info">
         Email:{" "}

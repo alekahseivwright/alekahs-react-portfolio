@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { API_BASE_URL } from "../config/api";
 
-import calculatorImg from "../assets/CalculatorApplication.png";
-import srsCityDoc from "../assets/SRS-CityRegistrationApp.docx";
-import restaurantImg from "../assets/ResturantWebsite.png";
-import srsCityImg from "../assets/SRS-Project.png";
+import calculatorImg from "../assets/pictures/CalculatorApplication.png";
+import srsCityDoc from "../assets/documents/SRS-CityRegistrationApp.docx";
+import restaurantImg from "../assets/pictures/ResturantWebsite.png";
+import srsCityImg from "../assets/documents/SRS-Project.png";
 
 const showcaseProjects = [
   {

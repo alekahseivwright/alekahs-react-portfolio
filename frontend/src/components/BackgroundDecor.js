@@ -1,6 +1,8 @@
-import kittyWaving from "../assets/kitty-waving.png";
-import kittiesCuddling from "../assets/kitties-cuddling.png";
-import kittiesRow from "../assets/kitties-row.png";
+import swingBunny from "../assets/gifs/swingbunny.gif";
+import hoolaBunny from "../assets/gifs/hoolahoopbunny.gif";
+import dancingBear from "../assets/gifs/dancingbear.gif";
+import dancingKitty from "../assets/gifs/danicingkitty.gif";
+import carrotCar from "../assets/gifs/carrotcar.gif";
 
 function PawIcon({ className }) {
   return (
@@ -30,9 +32,12 @@ function StarIcon({ className }) {
 function BackgroundDecor() {
   return (
     <div className="bg-decor" aria-hidden="true">
-      <img src={kittyWaving} alt="" className="decor-kitty decor-kitty-1" />
-      <img src={kittiesCuddling} alt="" className="decor-kitty decor-kitty-2" />
-      <img src={kittiesRow} alt="" className="decor-kitty decor-kitty-row" />
+      <img src={dancingKitty} alt="" className="decor-gif decor-dancing-kitty" />
+      <img src={swingBunny} alt="" className="decor-gif decor-swing-bunny" />
+      <img src={hoolaBunny} alt="" className="decor-gif decor-hoola-bunny" />
+      <img src={dancingBear} alt="" className="decor-gif decor-dancing-bear" />
+      <img src={carrotCar} alt="" className="decor-gif decor-carrot-car" />
+
       <PawIcon className="decor-icon decor-paw decor-paw-1" />
       <PawIcon className="decor-icon decor-paw decor-paw-2" />
       <StarIcon className="decor-icon decor-star decor-star-1" />
