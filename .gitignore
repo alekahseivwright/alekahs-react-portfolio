@@ -12,13 +12,17 @@ frontend/node_modules
 
 # production
 /build
+frontend/build/
 
 # Ignore all PDFs except the final resume
 *.pdf
-!public/Alekah_Seivwright_Resume.pdf
+!frontend/public/Alekah_Seivwright_Resume.pdf
 
 # misc
 .DS_Store
+Thumbs.db
+desktop.ini
+.cursor/
 .env
 backend/.env
 .env.local

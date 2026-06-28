@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "**/.cursor": true,
+    "**/node_modules": true,
+    "frontend/build": true
+  }
+}
