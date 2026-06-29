@@ -9,7 +9,7 @@ function Home() {
       <h1>Welcome to Alekah's Portfolio</h1>
 
       <p className="subtitle">
-        Software Engineering Student · Aspiring Frontend Developer · Cat Lover 🐱
+        Software Engineering Candidate · Aspiring Frontend Developer · Cat Lover 🐱
       </p>
 
       <p>
